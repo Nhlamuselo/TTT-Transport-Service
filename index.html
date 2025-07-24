@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTT Transport Services - Premium Transport Solutions</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">TTT</div>
+                <div class="logo-text">TRANSPORT</div>
+            </div>
+            <nav>
+                <ul class="nav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#3d-toolship">3D Toolship</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">🚗 Premium Transport Solutions</div>
+                <h1>PROFESSIONAL TRANSPORT SERVICES</h1>
+                <div class="hero-subtitle">EVERYWHERE YOU GO</div>
+                <p>Experience luxury and reliability with TTT Transport Services. From executive shuttles to long-distance travel across Southern Africa - we deliver excellence in every journey.</p>
+                <div class="hero-buttons">
+                    <button class="btn-hero btn-primary" onclick="openBookingModal()">Book Now</button>
+                    <button class="btn-hero btn-secondary" onclick="showFleetOverview()">Our Fleet</button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="car-showcase">
+                    <div class="car-card car-card-1" onclick="showFleetDetails('sedan')">
+                        <div class="car-icon"><i class="fas fa-car"></i></div>
+                        <h4>Executive Sedans</h4>
+                        <p>Premium Toyota Corolla fleet for business travel</p>
+                    </div>
+                    <div class="car-card car-card-2" onclick="showFleetDetails('van')">
+                        <div class="car-icon"><i class="fas fa-bus"></i></div>
+                        <h4>Luxury Vans</h4>
+                        <p>Spacious VW Multivan for group transport</p>
+                    </div>
+                    <div class="car-card car-card-3" onclick="showFleetDetails('suv')">
+                        <div class="car-icon"><i class="fas fa-truck"></i></div>
+                        <h4>SUV Fleet</h4>
+                        <p>Hyundai Venue for all-terrain adventures</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="trust-bar">
+        <div class="trust-container">
+            <div class="trust-item">
+                <span class="trust-number">1000+</span>
+                <div class="trust-label">Happy Clients</div>
+            </div>
+            <div class="trust-item">
+                <span class="trust-number">5000+</span>
+                <div class="trust-label">Trips Completed</div>
+            </div>
+            <div class="trust-item">
+                <span class="trust-number">24/7</span>
+                <div class="trust-label">Support Available</div>
+            </div>
+            <div class="trust-item">
+                <span class="trust-number">100%</span>
+                <div class="trust-label">Satisfaction Rate</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">🎯 Our Expertise</div>
+                <h2 class="section-title">Complete Business Solutions</h2>
+                <p class="section-subtitle">From premium transport services to comprehensive marketing solutions - we're your one-stop business partner for success.</p>
+            </div>
+            <div class="services-grid">
+                <!-- Transport Services -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-car-side"></i>
+                        </div>
+                        <div class="service-title">Premium Transport</div>
+                    </div>
+                    <p class="service-description">Professional transport solutions with our modern fleet, covering all destinations across Southern Africa with comfort and reliability.</p>
+                    <ul class="service-features">
+                        <li>Executive Airport Transfers - R500-800</li>
+                        <li>Corporate Shuttle Services - R300-600/hour</li>
+                        <li>Wedding & Event Transport - R1200-2000</li>
+                        <li>Funeral Services - R800-1500</li>
+                        <li>Long Distance Travel (Maputo R3500, Botswana R4000, Zimbabwe R5000)</li>
+                        <li>Local City Transport - R200-400</li>
+                        <li>Package Tours & Excursions - Quote on request</li>
+                        <li>24/7 Emergency Transport - R600-1000</li>
+                    </ul>
+                    <button class="service-btn" onclick="openBookingModal()">Book Transport Now</button>
+                </div>
+
+                <!-- Marketing Services -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <div class="service-title">Marketing Solutions</div>
+                    </div>
+                    <p class="service-description">Boost your business with our comprehensive marketing services designed to increase visibility, engagement, and drive real results.</p>
+                    <ul class="service-features">
+                        <li>Social Media Marketing & Management - R1500-5000/month</li>
+                        <li>Professional Graphic Design - R300-1200/design</li>
+                        <li>Event Promotion & Marketing - R2000-8000</li>
+                        <li>Flyer & Poster Design - R200-600</li>
+                        <li>Brand Identity Development - R3000-12000</li>
+                        <li>Digital Advertising Campaigns - R2500-10000</li>
+                        <li>Website Design & Development - R5000-25000</li>
+                        <li>Marketing Strategy Consultation - R1000-3000</li>
+                    </ul>
+                    <button class="service-btn" onclick="openMarketingModal()">Get Marketing Quote</button>
+                </div>
+
+                <!-- Trading Solutions -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <div class="service-title">Trading Solutions</div>
+                    </div>
+                    <p class="service-description">Complete trading and business consultation services to help you navigate markets and grow your business successfully.</p>
+                    <ul class="service-features">
+                        <li>Business Development Consultation - R2000-5000</li>
+                        <li>Supply Chain Management - R5000-15000</li>
+                        <li>Import/Export Services - Commission based</li>
+                        <li>Market Research & Analysis - R3000-8000</li>
+                        <li>Strategic Business Planning - R5000-20000</li>
+                        <li>Partnership Development - R3000-10000</li>
+                        <li>Investment Advisory - R2000-8000</li>
+                        <li>Trade Finance Solutions - R5000-25000</li>
+                    </ul>
+                    <button class="service-btn" onclick="openTradingModal()">Schedule Consultation</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3D Toolship Section -->
+    <section id="3d-toolship" class="toolship-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">🔧 3D Innovation</div>
+                <h2 class="section-title">3D Toolship Services</h2>
+                <p class="section-subtitle">We help you create realistic 3D mockups of your products or buildings so clients can see them before production.</p>
+            </div>
+            
+            <div class="toolship-content">
+                <div class="toolship-features">
+                    <div class="feature-grid">
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fas fa-cube"></i></div>
+                            <h4>3D Product Mockups</h4>
+                            <p>Realistic product visualization</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fas fa-play"></i></div>
+                            <h4>Realistic Animation</h4>
+                            <p>Engaging animated presentations</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fas fa-sync-alt"></i></div>
+                            <h4>Interactive Viewer</h4>
+                            <p>360-degree product views</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fas fa-home"></i></div>
+                            <h4>Interior/Exterior Designs</h4>
+                            <p>Architectural visualizations</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fas fa-palette"></i></div>
+                            <h4>Custom Branding</h4>
+                            <p>Colors and brand integration</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fas fa-video"></i></div>
+                            <h4>Video Renders</h4>
+                            <p>High-quality video outputs</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pricing-packages">
+                    <h3>3D Toolship Packages</h3>
+                    <div class="packages-grid">
+                        <div class="package-card">
+                            <h4>Basic Mockup</h4>
+                            <div class="package-price">R250</div>
+                            <ul>
+                                <li>1 3D model</li>
+                                <li>1 high-quality image</li>
+                                <li>Basic lighting</li>
+                                <li>Standard resolution</li>
+                            </ul>
+                        </div>
+                        <div class="package-card featured">
+                            <h4>Advanced Package</h4>
+                            <div class="package-price">R600</div>
+                            <ul>
+                                <li>1 detailed 3D model</li>
+                                <li>3 different angles</li>
+                                <li>Basic animation</li>
+                                <li>HD resolution</li>
+                                <li>2 revisions included</li>
+                            </ul>
+                        </div>
+                        <div class="package-card">
+                            <h4>Full Package</h4>
+                            <div class="package-price">R1,200</div>
+                            <ul>
+                                <li>Multiple 3D models</li>
+                                <li>360° interactive viewer</li>
+                                <li>Professional animation</li>
+                                <li>4K video render</li>
+                                <li>Unlimited revisions</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="toolship-cta">
+                        <button class="btn-hero btn-primary" onclick="open3DModal()">Request 3D Project</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">💬 Customer Reviews</div>
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-subtitle">Don't just take our word for it - hear from our satisfied customers who trust TTT for their business needs.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">TTT Transport provided exceptional service for our company events. Always punctual, professional, and their vehicles are immaculate. Highly recommended for corporate transport!</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MK</div>
+                        <div class="author-info">
+                            <h4>Michael Khumalo</h4>
+                            <p>CEO, Khumalo Holdings</p>
+                        </div>
+                    </div>
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">Their marketing team transformed our social media presence! Our engagement increased by 300% and we've gained so many new customers. TTT delivers results!</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SN</div>
+                        <div class="author-info">
+                            <h4>Sarah Ndlovu</h4>
+                            <p>Owner, Ndlovu Fashion</p>
+                        </div>
+                    </div>
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">Used TTT for my wedding transport - absolutely perfect! Beautiful vehicles, professional drivers, and everything went smoothly. Made our special day even more memorable.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">TM</div>
+                        <div class="author-info">
+                            <h4>Thabo Mthembu</h4>
+                            <p>Happy Customer</p>
+                        </div>
+                    </div>
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Let's Work Together</h2>
+                    <p style="color: #ccc; font-size: 1.2rem; margin-bottom: 3rem;">Ready to experience premium service? Contact TTT Transport Services today and let us handle your transport, marketing, and business needs with excellence.</p>
+                    
+                    <div class="contact-items">
+                        <div class="contact-item" onclick="openMapModal()">
+                            <div class="contact-item-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-item-text">
+                                <h4>Our Location</h4>
+                                <p>254 Oranjerivier Dr, Midriver Estate<br>Kempton Park, Gauteng 1619</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item" onclick="callNow()">
+                            <div class="contact-item-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-item-text">
+                                <h4>Call Us Now</h4>
+                                <p>072 844 3506 | 072 224 4720<br>082 758 0658</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item" onclick="sendEmail()">
+                            <div class="contact-item-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-item-text">
+                                <h4>Email Us</h4>
+                                <p>info@ttttrading.co.za<br>baloyit82@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item" onclick="openWhatsApp()">
+                            <div class="contact-item-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-item-text">
+                                <h4>WhatsApp Chat</h4>
+                                <p>Click here for instant<br>communication</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Get Your Free Quote</h3>
+                    <form id="mainContactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>First Name</label>
+                                <input type="text" required placeholder="Your first name">
+                            </div>
+                            <div class="form-group">
+                                <label>Last Name</label>
+                                <input type="text" required placeholder="Your last name">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Email Address</label>
+                                <input type="email" required placeholder="your@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label>Phone Number</label>
+                                <input type="tel" required placeholder="+27 XX XXX XXXX">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Service Required</label>
+                            <select required>
+                                <option value="">Select a service...</option>
+                                <option value="transport">Transport Service</option>
+                                <option value="marketing">Marketing Solution</option>
+                                <option value="trading">Trading Consultation</option>
+                                <option value="3d-toolship">3D Toolship</option>
+                                <option value="all">All Services</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Project Details</label>
+                            <textarea required placeholder="Tell us about your requirements, destination, dates, or any specific needs..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Get My Free Quote</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Book Your Transport</h2>
+                <span class="close" onclick="closeModal('bookingModal')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="bookingForm" class="booking-form">
+                    <!-- Customer Information -->
+                    <div class="form-section">
+                        <h3><i class="fas fa-user"></i> Customer Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Full Name *</label>
+                                <input type="text" id="customerName" required placeholder="Your full name">
+                            </div>
+                            <div class="form-group">
+                                <label>Phone Number *</label>
+                                <input type="tel" id="customerPhone" required placeholder="+27 XX XXX XXXX">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address *</label>
+                            <input type="email" id="customerEmail" required placeholder="your@email.com">
+                        </div>
+                    </div>
+
+                    <!-- Pickup & Drop-off Details -->
+                    <div class="form-section">
+                        <h3><i class="fas fa-map-marker-alt"></i> Pickup & Drop-off Details</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Pickup Location *</label>
+                                <input type="text" id="pickupLocation" required placeholder="Enter pickup address">
+                            </div>
+                            <div class="form-group">
+                                <label>Drop-off Location *</label>
+                                <input type="text" id="dropoffLocation" required placeholder="Enter destination">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Pickup Date *</label>
+                                <input type="date" id="pickupDate" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Pickup Time *</label>
+                                <input type="time" id="pickupTime" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Return Date (Optional)</label>
+                                <input type="date" id="returnDate">
+                            </div>
+                            <div class="form-group">
+                                <label>Return Time (Optional)</label>
+                                <input type="time" id="returnTime">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Vehicle Selection -->
+                    <div class="form-section">
+                        <h3><i class="fas fa-car"></i> Vehicle Selection</h3>
+                        <div class="vehicle-options">
+                            <div class="vehicle-option">
+                                <input type="radio" id="sedan" name="vehicle" value="sedan">
+                                <label for="sedan" class="vehicle-card">
+                                    <i class="fas fa-car"></i>
+                                    <span>Sedan</span>
+                                    <small>R500-800</small>
+                                </label>
+                            </div>
+                            <div class="vehicle-option">
+                                <input type="radio" id="suv" name="vehicle" value="suv">
+                                <label for="suv" class="vehicle-card">
+                                    <i class="fas fa-truck"></i>
+                                    <span>SUV</span>
+                                    <small>R600-1000</small>
+                                </label>
+                            </div>
+                            <div class="vehicle-option">
+                                <input type="radio" id="van" name="vehicle" value="van">
+                                <label for="van" class="vehicle-card">
+                                    <i class="fas fa-bus"></i>
+                                    <span>Van</span>
+                                    <small>R800-1500</small>
+                                </label>
+                            </div>
+                            <div class="vehicle-option">
+                                <input type="radio" id="truck" name="vehicle" value="truck">
+                                <label for="truck" class="vehicle-card">
+                                    <i class="fas fa-truck-moving"></i>
+                                    <span>Truck</span>
+                                    <small>R1200-2000</small>
+                                </label>
+                            </div>
+                            <div class="vehicle-option">
+                                <input type="radio" id="trailer" name="vehicle" value="trailer">
+                                <label for="trailer" class="vehicle-card">
+                                    <i class="fas fa-trailer"></i>
+                                    <span>Trailer</span>
+                                    <small>R1500-2500</small>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="driver-option">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Service Type *</label>
+                                    <select id="serviceType" required>
+                                        <option value="">Select service type...</option>
+                                        <option value="with-driver">With Driver</option>
+                                        <option value="self-drive">Self Drive</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Extra Services -->
+                    <div class="form-section">
+                        <h3><i class="fas fa-plus"></i> Extra Services (Optional)</h3>
+                        <div class="extras-grid">
+                            <label class="extra-option">
+                                <input type="checkbox" name="extras" value="child-seat">
+                                <span class="checkmark"></span>
+                                Child Seat (+R50)
+                            </label>
+                            <label class="extra-option">
+                                <input type="checkbox" name="extras" value="gps">
+                                <span class="checkmark"></span>
+                                GPS Navigation (+R30)
+                            </label>
+                            <label class="extra-option">
+                                <input type="checkbox" name="extras" value="additional-driver">
+                                <span class="checkmark"></span>
+                                Additional Driver (+R200)
+                            </label>
+                            <label class="extra-option">
+                                <input type="checkbox" name="extras" value="luggage-trailer">
+                                <span class="checkmark"></span>
+                                Luggage Trailer (+R150)
+                            </label>
+                            <label class="extra-option">
+                                <input type="checkbox" name="extras" value="insurance">
+                                <span class="checkmark"></span>
+                                Insurance Cover (+R100)
+                            </label>
+                            <label class="extra-option">
+                                <input type="checkbox" name="extras" value="long-distance">
+                                <span class="checkmark"></span>
+                                Long-distance Trip 150km+ (+R500)
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Payment Option -->
+                    <div class="form-section">
+                        <h3><i class="fas fa-credit-card"></i> Payment Option</h3>
+                        <div class="payment-options">
+                            <label class="payment-option">
+                                <input type="radio" name="payment" value="pay-on-collection" checked>
+                                <span class="radio-mark"></span>
+                                Pay on Collection
+                            </label>
+                            <label class="payment-option">
+                                <input type="radio" name="payment" value="eft">
+                                <span class="radio-mark"></span>
+                                EFT / Bank Transfer
+                            </label>
+                            <label class="payment-option">
+                                <input type="radio" name="payment" value="card" disabled>
+                                <span class="radio-mark"></span>
+                                Card Payment (Coming Soon)
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Cost Estimate -->
+                    <div class="booking-summary" id="costSummary">
+                        <h4>Estimated Cost</h4>
+                        <div id="costBreakdown"></div>
+                        <div class="total-cost">
+                            <strong>Total: <span id="totalCost">R0</span></strong>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Submit Booking Request</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Marketing Modal -->
+    <div id="marketingModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Marketing Code Request</h2>
+                <span class="close" onclick="closeModal('marketingModal')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="marketingForm" class="marketing-form">
+                    <!-- Client Information -->
+                    <div class="form-section">
+                        <h3><i class="fas fa-user-tie"></i> Client Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Full Name *</label>
+                                <input type="text" required placeholder="Your full name">
+                            </div>
+                            <div class="form-group">
+                                <label>Phone Number *</label>
+                                <input type="tel" required placeholder="+27 XX XXX XXXX">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Email Address *</label>
+                                <input type="email" required placeholder="your@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label>Company Name (Optional)</label>
+                                <input type="text" placeholder="Your company name">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Marketing Purpose -->
+                    <div class="form-section">
+                        <h3><i class="fas fa-bullseye"></i> What do you want marketing for?</h3>
+                        <div class="checkbox-group">
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="marketing-purpose" value="my-company">
+                                <span class="checkmark"></span>
+                                My company
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="marketing-purpose" value="personal-brand">
+                                <span class="checkmark"></span>
+                                My personal brand
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="marketing-purpose" value="product-service">
+                                <span class="checkmark"></span>
+                                A specific product or service
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="marketing-purpose" value="event">
+                                <span class="checkmark"></span>
+                                Event / Promotion
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="marketing-purpose" value="social-media">
+                                <span class="checkmark"></span>
+                                Social Media Only
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="marketing-purpose" value="whatsapp-business">
+                                <span class="checkmark"></span>
+                                WhatsApp Business
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Services Needed -->
+                    <div class="form-section">
+                        <h3><i class="fas fa-tasks"></i> What do you need?</h3>
+                        <div class="services-grid">
+                            <label class="service-option">
+                                <input type="checkbox" name="services" value="logo-design">
+                                <span class="checkmark"></span>
+                                <div class="service-info">
+                                    <strong>Logo Design</strong>
+                                    <span class="price">R300</span>
+                                </div>
+                            </label>
+                            <label class="service-option">
+                                <input type="checkbox" name="services" value="poster-flyer">
+                                <span class="checkmark"></span>
+                                <div class="service-info">
+                                    <strong>Poster/Flyer</strong>
+                                    <span class="price">R250</span>
+                                </div>
+                            </label>
+                            <label class="service-option">
+                                <input type="checkbox" name="services" value="social-media-content">
+                                <span class="checkmark"></span>
+                                <div class="service-info">
+                                    <strong>Social Media Content (5 posts)</strong>
+                                    <span class="price">R400</span>
+                                </div>
+                            </label>
+                            <label class="service-option">
+                                <input type="checkbox" name="services" value="website-copywriting">
+                                <span class="checkmark"></span>
+                                <div class="service-info">
+                                    <strong>Website Copywriting</strong>
+                                    <span class="price">R500</span>
+                                </div>
+                            </label>
+                            <label class="service-option">
+                                <input type="checkbox" name="services" value="business-profile">
+                                <span class="checkmark"></span>
+                                <div class="service-info">
+                                    <strong>Business Profile Document</strong>
+                                    <span class="price">R350</span>
+                                </div>
+                            </label>
+                            <label class="service-option">
+                                <input type="checkbox" name="services" value="whatsapp-catalog">
+                                <span class="checkmark"></span>
+                                <div class="service-info">
+                                    <strong>WhatsApp Catalog Setup</strong>
+                                    <span class="price">R200</span>
+                                </div>
+                            </label>
+                            <label class="service-option">
+                                <input type="checkbox" name="services" value="consultation">
+                                <span class="checkmark"></span>
+                                <div class="service-info">
+                                    <strong>30-min Consultation</strong>
+                                    <span class="price">R150</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Schedule Consultation -->
+                    <div class="form-section">
+                        <h3><i class="fas fa-calendar"></i> Schedule Consultation (Optional)</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Preferred Date</label>
+                                <input type="date" id="consultationDate">
+                            </div>
+                            <div class="form-group">
+                                <label>Preferred Time</label>
+                                <input type="time" id="consultationTime">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Preferred Method</label>
+                            <select id="consultationMethod">
+                                <option value="">Select method...</option>
+                                <option value="whatsapp-call">WhatsApp Call</option>
+                                <option value="zoom">Zoom Meeting</option>
+                                <option value="in-person">In-Person (Optional)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Cost Summary -->
+                    <div class="marketing-summary" id="marketingSummary">
+                        <h4>Cost Summary</h4>
+                        <div id="marketingCostBreakdown"></div>
+                        <div class="total-cost">
+                            <strong>Total: <span id="marketingTotal">R0</span></strong>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Submit Marketing Request</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3D Toolship Modal -->
+    <div id="toolshipModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Request 3D Project</h2>
+                <span class="close" onclick="closeModal('toolshipModal')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="toolshipForm" class="toolship-form">
+                    <div class="form-section">
+                        <h3><i class="fas fa-user"></i> Your Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Full Name *</label>
+                                <input type="text" required placeholder="Your name">
+                            </div>
+                            <div class="form-group">
+                                <label>Email *</label>
+                                <input type="email" required placeholder="your@email.com">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number *</label>
+                            <input type="tel" required placeholder="+27 XX XXX XXXX">
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3><i class="fas fa-cube"></i> Project Details</h3>
+                        <div class="form-group">
+                            <label>What do you want to create? *</label>
+                            <textarea required placeholder="Describe your 3D project in detail..."></textarea>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Project Type *</label>
+                                <select required>
+                                    <option value="">Select project type...</option>
+                                    <option value="product-mockup">Product Mockup</option>
+                                    <option value="architectural">Architectural Visualization</option>
+                                    <option value="interior-design">Interior Design</option>
+                                    <option value="animation">3D Animation</option>
+                                    <option value="interactive">Interactive 360° View</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Package *</label>
+                                <select required id="toolshipPackage">
+                                    <option value="">Select package...</option>
+                                    <option value="basic" data-price="250">Basic Mockup - R250</option>
+                                    <option value="advanced" data-price="600">Advanced Package - R600</option>
+                                    <option value="full" data-price="1200">Full Package - R1200</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Deadline</label>
+                                <input type="date">
+                            </div>
+                            <div class="form-group">
+                                <label>Budget Range</label>
+                                <select>
+                                    <option value="">Select budget...</option>
+                                    <option value="250-500">R250 - R500</option>
+                                    <option value="500-1000">R500 - R1000</option>
+                                    <option value="1000-2000">R1000 - R2000</option>
+                                    <option value="2000+">R2000+</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Upload Sample/Sketch (Optional)</label>
+                            <input type="file" accept="image/*,.pdf,.doc,.docx">
+                            <small>Accepted formats: Images, PDF, Word documents</small>
+                        </div>
+                    </div>
+
+                    <!-- Cost Display -->
+                    <div class="toolship-summary" id="toolshipSummary" style="display: none;">
+                        <h4>Project Cost</h4>
+                        <div class="cost-display">
+                            <span>Selected Package: <strong id="selectedPackage">-</strong></span>
+                            <span>Cost: <strong id="packageCost">R0</strong></span>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Submit 3D Request</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Map Modal -->
+    <div id="mapModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Our Location</h2>
+                <span class="close" onclick="closeModal('mapModal')">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="location-info">
+                    <h3><i class="fas fa-map-marker-alt"></i> TTT Transport Services</h3>
+                    <p><strong>Address:</strong> 254 Oranjerivier Dr, Midriver Estate, Kempton Park, Gauteng 1619</p>
+                    <p><strong>GPS Coordinates:</strong> -26.1186, 28.2253</p>
+                    <p><strong>Directions:</strong> Located in Midriver Estate, easily accessible from OR Tambo International Airport (15 minutes drive)</p>
+                </div>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3584.5656089654524!2d28.22310931504827!3d-26.118604983467826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c0e6b5b5b5b%3A0x5b5b5b5b5b5b5b5b!2s254%20Oranjerivier%20Dr%2C%20Kempton%20Park%2C%201619!5e0!3m2!1sen!2sza!4v1600000000000!5m2!1sen!2sza" 
+                        width="100%" 
+                        height="300" 
+                        style="border:0; border-radius: 10px;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="contact-actions">
+                    <button onclick="openDirections()" class="btn-primary">Get Directions</button>
+                    <button onclick="callNow()" class="btn-secondary">Call Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="about" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TTT Transport Services</h3>
+                    <p>Founded by Thomas Baloyi and Timothy Baloyi (The Twins), TTT Transport Services is your trusted partner for premium transport, innovative marketing, and strategic trading solutions across Southern Africa.</p>
+                    <p><strong>Our Mission:</strong> To provide exceptional service that exceeds expectations while building lasting relationships with our clients.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Our Services</h3>
+                    <p><a href="#services">Premium Transport Services</a></p>
+                    <p><a href="#services">Executive Airport Transfers</a></p>
+                    <p><a href="#services">Corporate Shuttles</a></p>
+                    <p><a href="#services">Event Transportation</a></p>
+                    <p><a href="#services">Marketing Solutions</a></p>
+                    <p><a href="#services">Trading Consultation</a></p>
+                    <p><a href="#3d-toolship">3D Toolship Services</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Coverage Areas</h3>
+                    <p><strong>Local:</strong> Gauteng, Pretoria, Johannesburg</p>
+                    <p><strong>National:</strong> Cape Town, Durban, Free State</p>
+                    <p><strong>Regional:</strong> Maputo, Botswana, Zimbabwe</p>
+                    <p><strong>Cross-border:</strong> Lesotho, Limpopo</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Contact</h3>
+                    <p><i class="fas fa-phone"></i> 072 844 3506</p>
+                    <p><i class="fas fa-phone"></i> 072 224 4720</p>
+                    <p><i class="fas fa-envelope"></i> info@ttttrading.co.za</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Kempton Park, Gauteng</p>
+                    <p><i class="fas fa-clock"></i> 24/7 Emergency Service</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TTT Transport Services. All rights reserved. | Designed with ❤ by Student Developer | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/27728443506?text=Hi%20TTT%20Transport!%20I%27m%20interested%20in%20your%20services." class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
